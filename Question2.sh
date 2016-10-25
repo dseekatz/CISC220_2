@@ -15,4 +15,22 @@ read username;
 echo "Please enter your github password: "
 $ read -s password; #to hide password
 
+#The script compresses all files except if the file has been previously backed up
+# tar c:create, z:compress using gzip, v:verbose, f: into file
+
+# Naming backup files where the file name is backup, followed by the current year, month, day and hour
+TIME=$(date + %Y%M%D-%H)
+
+#The filename will be "backup" and the year/month/day/hour that the file was backed up
+fileName=backup -$TIME.tar.gz
+
+#Path to repository
+locationOfFile= "/https://github.com/dseekatz/CISC220_2.git"
+
+#Destination of backup
+mkdir compressedFiles =/backupfolder 
+
+#help with how this works: tar czvf pathtoCompressedFile /pathToCompress. What about filename?
+tar czvf compressedFiles.tgz fileName /locationOfFile --exclude= <date +%Y-%m-%d-%H) #previously backed up files with current date?
+  
 
