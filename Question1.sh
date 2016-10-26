@@ -1,10 +1,16 @@
 #!/bin/bash
 
+# Get the list of processes and format it.
 oldIFS="$IFS"
 IFS=$'\n'
-processList=($(ps axo comm,pid,ppid,start,user | awk 'NR>1 {print $0}' | sort -n -k 3,3 -k 2,2))
-IFS="$oldIFS"
+processList=$(ps axo comm,pid,ppid,start,user | awk 'NR>1 {print $1 " PID:" $2 " PPID:" $3 " Started:" $4 " by:" $5}')
 
-for (( i=1; i<=${#processList[*]}; i++ )) ; do
-	echo "${processList[i]}"
-done
+# This will be the recursive function that sorts the processes into "tree" form.
+# Right now it just prints the full process list (unsorted)
+function processSort {
+	echo "$*"
+}
+
+processSort $processList
+
+IFS=$oldIFS
