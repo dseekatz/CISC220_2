@@ -23,7 +23,7 @@ tar -C $path -czvf backup$year$month$day$hour.tgz --exclude= *.tgz &> backupsLog
 
 #Commit the new backup file to local git repository
 git add backup$yeah$month$day$hour.tgz
-git commit -m "Comming the backup file to the git repository"
+git commit -m "Commiting the backup file to the git repository"
 
 #Push the new backup file to remote git repository
 git push http://$3:$4@$2 --all 
