@@ -1,5 +1,4 @@
-#Question5.sh
-#change to filewallSetup.sh
+#firewallSetup.sh
 #!/bin/bash
 #This program adds firewall rules to do various things
 
