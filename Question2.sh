@@ -19,7 +19,7 @@ day=$(date +'%d')
 hour=$(date +'%H')
 
 #Compress files
-tar -C $path -czvf backup$year$month$day$hour.tgz --exclude= *.tgz &> backupsLog #previously backed up files with current dat
+tar -C $path -czvf backup$year$month$day$hour.tgz --exclude= *.tgz &> backupsLog #previously backed up files with current date
 
 #Commit the new backup file to local git repository
 git add backup$yeah$month$day$hour.tgz
