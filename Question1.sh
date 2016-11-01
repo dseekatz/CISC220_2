@@ -1,4 +1,8 @@
 #!/bin/bash
+#David Seekatz 	    16das4 20037710
+#Sean Eylott	    13se18 10141657
+#Simon Ungar         14seau 10149546
+#Brooke Resendes     13brr2 10141112
 
 # Question1
 # This script lists all active processes.  If a process has children, then its children are listed underneath it.
