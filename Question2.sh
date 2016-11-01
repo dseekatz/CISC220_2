@@ -1,5 +1,11 @@
+#David Seekatz 	    16das4 20037710
+#Sean Eylott	    13se18 10141657
+#Simon Ungar         14seau 10149546
+#Brooke Resendes     13brr2 10141112
+
 #Question2
 #!/bin/bash
+
 # This script backs up all the files in the repository, except if the file has previously been backed up, and pushes the backup to the github repository
 # cron job command is used to ensure the script runs everyday at 1:00am crontab -e 01*** 
 
