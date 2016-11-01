@@ -2,6 +2,12 @@
 #!/bin/bash
 #This program adds firewall rules to do various things
 
+#David Seekatz 	    16das4 20037710
+#Sean Eylott	    13se18 10141657
+#Simon Ungar         14seau 10149546
+#Brooke Resendes     13brr2 10141112
+
+
 #Delete any previous rules in the INPUT, FORWARD and OUTPUT tables
 sudo iptables -F
 
