@@ -1,5 +1,10 @@
 #!/bin/bash
 
+#David Seekatz 	    16das4 20037710
+#Sean Eylott	    13se18 10141657
+#Simon Ungar         14seau 10149546
+#Brooke Resendes     13brr2 10141112
+
 # This program will loop through all of the IP addresses belonging to Queen's (130.15.00.00 - 130.15.255.255)
 # and it will print all addresses that were assigned a name.
 # ***THIS PROGRAM TAKES A LOT OF TIME TO RUN***
